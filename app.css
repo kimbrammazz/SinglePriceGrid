@@ -1,0 +1,185 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* styles for index.html*/
+
+html {
+    font-family: Karla, sans-serif;
+}
+
+body {
+    background-color: #E5EFF5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size:16px;
+}
+
+.content {
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 350px;
+    display:flex;
+    flex-direction: column;
+}
+
+.intro {
+    padding: 30px 25px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 25px;
+
+}
+
+.intro h1 {
+    color:  #2ab2af;
+}
+
+.intro h2 {
+    color: #C0DF34;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.intro p {
+    color: #98A6BD;
+    line-height: 1.5;
+    text-align: justify
+}
+
+.pricing {
+    background-color: #2ab2af;
+    padding: 30px 25px;
+    color: #E5EFF5;
+}
+
+.price {
+    font-size: 32px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.duration {
+    color: #c5cad1;
+}
+
+.pricing p {
+    margin: 15px 0;
+}
+.pricing a {
+    border: 1px solid  #C0DF34;
+    border-radius: 5px;
+    background-color: #C0DF34;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 80px;
+    margin: 25px 0;
+    transition: background-color 200ms ease-in-out;
+    text-align: center
+}
+
+.info {
+    background-color: #4ccef1;
+    border-bottom-left-radius: 10px 10px;
+    border-bottom-right-radius: 10px 10px;
+    padding: 30px 25px;
+    color: #E5EFF5;
+}
+
+.info ul {
+    line-height: 1.5;
+}
+
+@media (min-width: 900px) {
+    .content {
+        max-width: 720px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    h1 {
+        margin-top: 20px;
+    }
+    .pricing {
+        border-bottom-left-radius: 10px 10px;
+        max-width: 50%;
+        margin: 0 auto;
+        padding-left: 50px;
+        padding-right: 0;
+        flex-grow:1
+        
+    }
+    .info {
+        border-bottom-left-radius: 0 0;
+        max-width: 50%;
+        font-size: 14px;
+        padding-left: 40px;
+        flex-grow: 1;
+    }
+    .pricing a {
+        margin-top: 30px
+        display: flex;
+        justify-content: center;
+        max-width: 80px;              
+    }
+    .pricing a:hover {
+        background-color: #e3f39d;
+    }
+}
+
+footer {
+    display: none;
+}
+
